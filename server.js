@@ -4,7 +4,7 @@ const port = 3000
 const db = require('./config/db')
 
 
-
+app.use(express.urlencoded({extended : true}))
 app.use('/' , require("./router/index"))
 
 
